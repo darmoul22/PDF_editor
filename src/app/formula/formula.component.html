@@ -1,0 +1,47 @@
+<div class="Container">
+    <div class="PDFcontainer">
+    <h3>Quill Js</h3>
+        <quill-editor
+        #editor
+        [(ngModel)]="content"
+        [modules]="modules"
+        (onEditorCreated)="addBindingCreated($event)">
+        </quill-editor>
+
+    <button class="butt butt5 subbut" (click)="onSubmit()">Submit</button>
+
+    <h4>Output</h4>
+        <div class="outputContainer" >
+            <div id="cont" #cont >
+                <quill-view-html [content]="editorcontent" theme="snow" ></quill-view-html>
+            </div>
+        </div>
+    <input [(ngModel)]="name" type="text" placeholder="Type in the name of the file">
+        <div class="buttons">
+            <button (click)="createPDF()" class="butt butt5">Download</button>
+            <button (click)="savePDF()" class="butt butt5">Save file</button>
+        </div>
+    </div>
+
+    <div class="filescontainer">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">File</th>
+                <th scope="col">Load</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let file of files; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>
+                    {{ file.name }}
+                </td>
+                <td><button (click)="loadPDF(file)" class="btn">Load<i class="fa fa-home"></i></button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

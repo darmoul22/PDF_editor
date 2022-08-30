@@ -1,0 +1,70 @@
+.butt {
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 16px;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px ;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+.butt5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.butt5:hover {
+    background-color: #555555;
+    color: white;
+}
+.outputContainer{
+    border: #555555 solid 2px;
+    width: 600px;
+}
+input{
+    width: 300px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 30px ;
+
+}
+.buttons{
+    display: inline-block;
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+}
+.PDFcontainer{
+    width: 700px;
+}
+.filescontainer{
+    margin-left: 2rem;
+    margin-top: 5px;
+    width: 90%;
+}
+.btn {
+    background-color: gray; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: gray;
+}
+.subbut{
+    margin-top: 5px;
+}
